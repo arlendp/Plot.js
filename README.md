@@ -235,9 +235,9 @@ Plot.candleStick([{
 
 提供对几种heatmap类型图表的绘制。
 
-![heatmap-1](./API/src/heatmap-*png)
+![heatmap-1](./API/src/heatmap-1.png)
 
-![heatmap-2](./API/src/heatmap-*png)
+![heatmap-2](./API/src/heatmap-2.png)
 
 参数说明：
 
