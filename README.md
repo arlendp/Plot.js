@@ -156,7 +156,7 @@ Plot.arc(10, 10, 20, {
 
 绘制蜡烛图(K线图)。
 
-![QQ20171127-103251@2x](/Users/arlendp/Desktop/QQ20171127-103251@2x.png)
+![candleStick](./API/src/candleStick.png)
 
 参数说明：
 
@@ -235,9 +235,9 @@ Plot.candleStick([{
 
 提供对几种heatmap类型图表的绘制。
 
-![QQ20171127-105127@2x](/Users/arlendp/Desktop/QQ20171127-105127@2x.png)
+![heatmap-1](./API/src/heatmap-1.png)
 
-![QQ20171127-105221@2x](/Users/arlendp/Desktop/QQ20171127-105221@2x.png)
+![heatmap-2](./API/src/heatmap-2.png)
 
 参数说明：
 
@@ -283,7 +283,7 @@ Plot.heatmap('type1', [{
 
 提供对盒形图(boxplot)的绘制。
 
-![QQ20171127-110449@2x](/Users/arlendp/Desktop/QQ20171127-110449@2x.png)
+![boxplot](./API/src/boxplot.png)
 
 参数说明：
 
