@@ -312,8 +312,8 @@ Plot.boxplot([{
 
 - [Chords](./API/Chords.md)
 - [Colors](./API/Colors.md)
-- [Delimiter-Separated Values](./dsv.md)
-- [Forces](./Forces.md)
-- [Hierarchies](./Hierarchies.md)
-- [Paths](./Paths.md)
-- [Shapes](./Shapes.md)
+- [Delimiter-Separated Values](./API/dsv.md)
+- [Forces](./API/Forces.md)
+- [Hierarchies](./API/Hierarchies.md)
+- [Paths](./API/Paths.md)
+- [Shapes](./API/Shapes.md)
