@@ -1,7 +1,7 @@
 ## Forces
 
 提供创建力导图的API
-![force](./API/src/ios/force.png)
+![force](./ios/force.png)
 ### ForceSimulation
 
 具体见`DFIForceSimulation.h`头文件。**DFIForceSimulation**类用来描述了一个场景：多个节点在多种类型的力相互作用下的运动情况。该场景下会包含多个节点；也会包含多种力，比如：弹簧力，万有引力，向心力等等
