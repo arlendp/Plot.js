@@ -1,5 +1,5 @@
 ## Chords
-![chords](./ios/chords.png)
+![chords](./src/ios/chords.png)
 ### chord
 
 具体见`DFIChord.h`头文件。提供了绘制弦图的API。该文件包含两个类：

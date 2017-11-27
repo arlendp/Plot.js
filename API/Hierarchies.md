@@ -1,7 +1,7 @@
 ## Hierarchies
 
 层级图API。可以绘制多种层级图，包括：**Cluster**，**Tree**，**TreeMap**，**Pack**等等
-![pack](./ios/pack.png)
+![pack](./src/ios/pack.png)
 ### Cluster
 
 具体见`DFIHierarchyCluster.h`头文件，**DFIHierarchyCluster**类提供了绘制Cluster的API
