@@ -1,34 +1,34 @@
 ## Colors
 
-具体见`DFIColor.h`头文件。**DFIColor**类提供了多种生成颜色的简易方法。支持多种颜色格式。
+More detail in`DFIColor.h`header file。**DFIColor class offers many easy way to generate varies of colors , supporting many kinds of color formats。
 
 ### API
 
 [#]() `@property (nonatomic, assign) CGFloat r;`
 
-*r* 颜色的red分量
+*r* —red part of the color 
 
 [#]() `@property (nonatomic, assign) CGFloat g;`
 
-*g* 颜色的green分量
+*g* —green part of the color 
 
 [#]() `@property (nonatomic, assign) CGFloat b;`
 
-*b* 颜色的blue分量
+*b* —blue part of the color 
 
 [#]() `@property (nonatomic, assign) CGFloat opacity;`
 
-*opacity* 颜色的透明度
+*opacity* —opacity of the color
 
 [#]() `+ (DFIColor *)colorWithFormat:(NSString *)format;`
 
-参数说明：
+Parameter Instruction：
 
-*format* : 输入的颜色格式
+*format* : the format to enter the color
 
-函数说明：
+Functions Instruction：
 
-输入一种颜色，输出对应的DFIColor对象。该函数支持多种颜色的输入格式，包括：
+Type in a specific color to generate according DFIColor object。This function supports varies of input format such as：
 
 1. `rgb(255, 255, 255)`
 2. `rgb(10%, 20%, 30%)`
@@ -40,24 +40,24 @@
 
 [#]() `- (DFIColor *)brighterWithK:(CGFloat)k;`
 
-参数说明：
+Parameter Instruction：
 
-*k* : 以k为倍数，将color调亮。默认k为0.7
+*k* : k works as the factor, making the color look brighter, 0.7 in defualt.
 
 [#]() `- (DFIColor *)darkerWithK:(CGFloat)k;`
 
-参数说明：
+Parameter Instruction：
 
-*k* : 以k为倍数，将color调暗。默认k为 1/0.7
+*k* : k works as the factor, making the color look darker,1/0.7 in default.
 
 [#]() `- (UIColor *)toUIColor;`
 
-函数说明：
+Function Instruction:
 
-实现**DFIColor** 和 **UIColor** 之间的相互转换
+Transfer DFIColor object into UIColor object or in versely.
 
 [#]() `- (NSString *)toString;`
 
-函数说明：
+Function Instruction：
 
-将**DFIColor**转换成类似 *#ffeeaa* 这样的格式的**NSString**
+Transfer DFIColor object into #ffeeaa format NSString object.
