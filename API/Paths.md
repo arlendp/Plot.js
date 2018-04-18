@@ -1,72 +1,72 @@
 ## Paths
 
-具体见`DFIPath.h`头文件。**DFIPath**类用来封装各种路径相关的信息
+More detail in`DFIPath.h`header file. **DFIPath** class responds to information about path.
 
 ### API
 
 [#]() `@property (nonatomic, strong) UIBezierPath *path;`
 
-*path*: 使用beisaier曲线存放路径信息
+*path*: using BezierPath to store path information.
 
 [#]() `- (DFIPath *)moveTo:(CGPoint)point;`
 
-函数说明： 移动到特定的point
+Function Instruction： move to specific point.
 
 [#]() `- (DFIPath *)closePath;`
 
-函数说明： 闭合一条曲线
+Function Instruction： close a specific path.
 
 [#]() `- (DFIPath *)lineTo:(CGPoint)point;`
 
-函数说明： 添加一条直线到特定的point
+Function Instruction：Add a line to specific point.
 
 [#]() `- (DFIPath *)quadraticCurveTo:(CGPoint)endPoint withControl:(CGPoint)controlPoint;`
 
-函数说明： 添加一条二次贝塞尔曲线
+Function Instruction： add a quadratic Bezier path
 
-参数说明：
+Parameter Instruction：
 
-1. *endPoint*: 终点
-2. *controlPoint*: 中间的控制点
+1. *endPoint*: where the path ends
+2. *controlPoint*: the control point to draw the quadratic Bezier path.
 
 [#]() `- (DFIPath *)bezierCurveTo:(CGPoint)endPoint withControl1:(CGPoint)point1 andControl2:(CGPoint)point2;`
 
-函数说明： 添加一条三次贝塞尔曲线
+Function Instruction： add a cubic Bezier Path
 
-参数说明：
+Parameter Instruction：
 
-1. *endPoint*: 终点
-2. *point1*: 控制点1
-3. *point2*: 控制点2
+1. *endPoint*:  where the path ends
+2. *point1*: the first control point to draw the quadratic Bezier path.
+3. *point2*: the second control point to draw the quadratic Bezier path.
 
 [#]() `- (DFIPath *)arcTo:(CGPoint)point1 to:(CGPoint)point2 withRadius:(float)radius;`
 
-函数说明： 添加一条圆弧
+Function Instruction： add a curve
 
-参数说明：
+Parameter Instruction：
 
-1. *point1*: 起始点
-2. *point2*: 终点
-3. *radius*: 半径
+1. *point1*: where the path starts
+2. *point2*:  where the path ends
+3. *radius*:  the radius of the curve
 
 [#]() `- (DFIPath *)arcWithCenter:(CGPoint)center startAngle:(float)startAngle endAngle:(float)endAngle andRadius:(float)radius clockwise:(BOOL)clockwise;`
 
-函数说明： 添加一条圆弧
+Function Instruction： add an arc, with multiple parameters
 
-参数说明：
+Parameter Instruction：
 
-1. *center*: 圆心
-2. *startAngle*: 起始弧度
-3. *endAngle*: 结束弧度
-4. *radius*: 半径
-5. *clockwise*: 顺时针/逆时针
+1. *center*: center of the arc
+2. *startAngle*: where the arc starts, on the basis of angle 
+3. *endAngle*: where the arc ends, on the basis of angle
+4. *radius*: radius of the arc
+5. *clockwise*: how to draw the arc, clockwisely or the other way
 
 [#]() `- (DFIPath *)rectWithPoint:(CGPoint)point width:(float)width andHeight:(float)height;`
 
-函数说明： 添加一个矩形
+Function Instruction： add a rectangle
 
-参数说明：
+Parameter Instruction：
 
-1. *point*: 左上角
-2. *width*: 宽
-3. *height*: 高
+1. *point*:  where the left top point of the rectangle lies
+2. *width*: width of the rectangle
+3. *height*: height of the rectangle

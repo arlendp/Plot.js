@@ -1,117 +1,117 @@
 ## Shapes
 
-提供基本图形的API。包括**扇形图**，**饼图**，**折线图**，**面积图**，**stack图形**，**基础图形**等等
+Offering basic shapes API, including sector shape graph, pie chart graph, line graph, area graph, stack graph, basic shape graph and so on.
 
-### Arc扇形图
+### ArcSector Graph
 
-具体见`DFIShapeArc.h`头文件。**DFIShapeArc**类提供绘制扇形图的API。
+More detail in `DFIShapeArc.h` header file。**DFIShapeArc** class provide API to draw ArcSector graph.
 
 #### API
 
 [#]() `@property (nonatomic, strong) DFIPath *path;`
 
-*path*：使用DFIPath来存储扇形的路径信息
+*path*：use DFIPath object to store the path information of a sector graph.
 
 [#]() `@property (nonatomic, assign) float innerRadius;`
 
-*innerRadius* : 扇形的内半径
+*innerRadius* : inner radius of a sector.
 
 [#]() `@property (nonatomic, assign) float outerRadius;`
 
-*outerRadius* : 扇形的外半径
+*outerRadius* : outer radius of a sector.
 
 [#]() `@property (nonatomic, assign) float startAngle;`
 
-*startAngle* : 扇形的起始弧度
+*startAngle* : where the sector starts in angle form.
 
 [#]() `@property (nonatomic, assign) float endAngle;`
 
-*endAngle* : 扇形的借宿弧度
+*endAngle* : where the sector ends in angle form.
 
 [#]() `@property (nonatomic, assign) float padAngle;`
 
-*padAngle* : 两扇形之间的弧度
+*padAngle* : the crossing-angle between two sectors.
 
 [#]() `- (void)loadArcWithData:(NSDictionary *)data;`
 
-函数说明： 使用data来填充扇形的数据，等待绘制
+Function Instruction: use data to fill sector shape, waiting for drawning.
 
-### Pie饼图
+### Pie Graph
 
-具体见`DFIShapePie.h`。**DFIShapePie**类提供了绘制饼图的API
+More detail in `DFIShapePie.h` header file 。**DFIShapePie** class offers API to draw pie graph.
 
 #### API
 
 [#]() `@property (nonatomic, assign) float startAngle;`
 
-*startAngle* : 饼图的起始弧度
+*startAngle* : where the pie graph starts in angle form.
 
 [#]() `@property (nonatomic, assign) float endAngle;`
 
-*endAngle* : 饼图的借宿弧度
+*endAngle* : where the pie grap ends in angle form.
 
 [#]() `@property (nonatomic, strong) NSArray *arcs;`
 
-*arcs*: 饼图由多个扇形图构成，arcs保存了扇形图的信息
+*arcs*: a pie graph is made up with multiple sector shape, arcs restore the information of sector graphs.
 
 [#]() `- (NSMutableArray *)loadPieWithData:(NSMutableArray *)data;`
 
-函数说明： 加载pie数据，创建饼图，全局加载方法, 返回arc数组，等待绘制
+Function Instruction: load pie data, create pie graph, returning arc arry and waiting for drawning.
 
-### Line折线图
+### Line Graph
 
-具体见`DFIShapeLine.h`。**DFIShapeLine**类提供了绘制折线图的API
+More detail in `DFIShapeLine.h` header file。**DFIShapeLine** class offered API to draw Line graph.
 
 #### API
 
 [#]() `@property (nonatomic, assign) DFIShapeCurveType curveType;`
 
-*curveType* : 两点间的线段的类型
+*curveType* : the type of line between two points.
 
 [#]() `@property (nonatomic, strong) DFIPath *context;`
 
-*context* : 折线的路径
+*context* : the path of a line.
 
 [#]() `- (void)loadLineWithData:(NSDictionary *)data;`
 
-函数说明： 使用data来填充折线图的数据，等待绘制
+Function Instruction：use data variable to fill line graph's data, waiting for drawning. 
 
-### Area面积图
+### Area Graph
 
-具体见`DFIShapeArea.h`。**DFIShapeArea**类提供了绘制面积图的API
+More detail in `DFIShapeArea.h` header file。**DFIShapeArea** class offers API to draw area graph.
 
 #### API
 
 [#]() `@property (nonatomic, assign) DFIShapeCurveType curveType;`
 
-*curveType* : 两点间的线段的类型
+*curveType* : type of the line betwenn two points.
 
 [#]() `@property (nonatomic, strong) DFIPath *context;`
 
-*context* : 面积的路径
+*context* : the path of whole Area graph.
 
 [#]() `- (void)loadAreaWithData:(NSDictionary *)data;`
 
-函数说明： 使用data来填充面积图的数据，等待绘制
+Fcuntion Instruction：use data to build Area graph, waiting for drawing. 
 
-### Symbol基本图形
+### Symbol Basic Shapes 
 
-具体见`DFIShapeSymbol.h`。**DFIShapeSymbol**类提供了绘制基本图形的API
+More detail in `DFIShapeSymbol.h` header file。**DFIShapeSymbol** class offers API to draw basic shapes.
 
 #### API
 
 [#]() `@property (nonatomic, assign) DFIShapeSymbolType type;`
 
-*type* : 基本图形的类型
+*type* : type of the basic symbol shape.
 
 [#]() `@property (nonatomic, strong) DFIPath *context;`
 
-*context* : 图形路径
+*context* : the path of the basic shape.
 
 [#]() `@property (nonatomic, assign) CGFloat size;`
 
-*size*: 设置图形的size
+*size*: determine the size of the shape.
 
 [#]() `- (void)loadSymbol;`
 
-函数说明： 加载symbol，在init，设置type，size之后
+Function Instruction： load symbol, and initilize, after setting the type and size variables.

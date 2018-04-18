@@ -1,137 +1,137 @@
 ## Hierarchies
 
-层级图API。可以绘制多种层级图，包括：**Cluster**，**Tree**，**TreeMap**，**Pack**等等
+API for hierarchies making，to make many kinds of hierarchies graph,including **Cluster**，**Tree**，**TreeMap**，**Pack** and so on.
 ![pack](./src/ios/pack.png)
 ### Cluster
 
-具体见`DFIHierarchyCluster.h`头文件，**DFIHierarchyCluster**类提供了绘制Cluster的API
+More detail in `DFIHierarchyCluster.h` header file，**DFIHierarchyCluster** class offers API to draw cluster graph.
 
 #### API
 
 [#]() `@property (nonatomic, strong) DFIHierarchyNode *root;`
 
-*root* : 表示该层级数据的根节点。有了该根节点，就可以得到所有的节点。详见[DFIHierarchyNode]()
+*root* : represents the root node of the hierarchy data, one can have access to all the nodes using this root node. More detail in [DFIHierarchyNode]()
 
 [#]() `- (void)loadRootNode:(DFIHierarchyNode *)root;`
 
-函数说明：使用root根节点，来填充该Cluster层级图，等待绘制
+Function Instruction：using root node to fill corresponding cluster hierarchy graph and wait to draw.
 
 [#]() `- (DFIHierarchyCluster *)size:(CGSize)size;`
 
-函数说明：设置Cluster的大小，返回该Cluster为了链式调用
+Function Instruction：determine the size of cluster graph, and return the cluster for chained calling.
 
 ### Tree
 
-具体见`DFIHierarchyTree.h`头文件，**DFIHierarchyTree**类提供了绘制Tree的API
+More detail in `DFIHierarchyTree.h` header file，**DFIHierarchyTree** class offers API to draw tree graph.
 
 #### API
 
 [#]() `@property (nonatomic, strong) DFIHierarchyNode *root;`
 
-*root* : 表示该层级数据的根节点。有了该根节点，就可以得到所有的节点。详见[DFIHierarchyNode]()
+*root* :  represents the root node of this hierarchy graph data, one can have access to all the nodes using this single root node. More detail in [DFIHierarchyNode]()
 
 [#]() `- (void)loadRootNode:(DFIHierarchyNode *)root;`
 
-函数说明：使用root根节点，来填充该Tree层级图，等待绘制
+Function Instruction： use root node to fill this Tree hierarchy grapg, wating for drawning.
 
 [#]() `- (DFIHierarchyTree *)size:(CGSize)size;`
 
-函数说明：设置Tree的大小，返回该Tree为了链式调用
+Function Instruction: determine the size of the Tree, returning the Tree for chained-calling.
 
 ### TreeMap
 
-具体见`DFIHierarchyTreemap.h`头文件，**DFIHierarchyTreemap**类提供了绘制TreeMap的API
+More detail in `DFIHierarchyTreemap.h` header file，**DFIHierarchyTreemap** class offers API to draw TreeMap.
 
 #### API
 
 [#]() `@property (nonatomic, strong) DFIHierarchyNode *root;`
 
-*root* : 表示该层级数据的根节点。有了该根节点，就可以得到所有的节点。详见[DFIHierarchyNode]()
+*root* : represents the root node of this hierarchy data, one can have access to all the nodes from this root node.More detail in [DFIHierarchyNode]()
 
 [#]() `- (void)loadRootNode:(DFIHierarchyNode *)root;`
 
-函数说明：使用root根节点，来填充该TreeMap层级图，等待绘制
+Function Instruction: use root node to fill TreeMap hierarchy graph, wating for drawning.
 
 [#]() `- (DFIHierarchyTreeMap *)size:(CGSize)size;`
 
-函数说明：设置TreeMap的大小，返回该TreeMap为了链式调用
+Function Instruction: determine the size of TreeMap, returning this TreeMap for chained calling.
 
 [#]() `@property (nonatomic, assign) float paddingInner;`
 
-*paddingInner* : 表示方块的内间距
+*paddingInner* : represents the inner padding of rectangele.
 
 [#]() `@property (nonatomic, assign) float paddingTop;`
 
-*paddingTop* : 表示方块的上间距
+*paddingTop* : represents the upper padding of rectangle.
 
 [#]() `@property (nonatomic, assign) float paddingRight;`
 
-*paddingRight* : 表示方块的右间距
+*paddingRight* : represents the right padding of rectangle.
 
 [#]() `@property (nonatomic, assign) float paddingBottom;`
 
-*paddingBottom* : 表示方块的下间距
+*paddingBottom* : represents the buttom padding of rectangle.
 
 [#]() `@property (nonatomic, assign) float paddingLeft;`
 
-*paddingLeft* : 表示方块的左间距
+*paddingLeft* : represents the left padding of rectangle.
 
 ### Pack
 
-具体见`DFIHierarchyPack.h`头文件，**DFIHierarchyPack**类提供了绘制Pack的API
+More detail in `DFIHierarchyPack.h` header file，**DFIHierarchyPack** class offers API to draw pach graph.
 
 #### API
 
 [#]() `@property (nonatomic, strong) DFIHierarchyNode *root;`
 
-*root* : 表示该层级数据的根节点。有了该根节点，就可以得到所有的节点。详见[DFIHierarchyNode]()
+*root* : represents the root node of this hierarchy data, one can have access to all the nodes using this root node. More detail in [DFIHierarchyNode]()
 
 [#]() `- (void)loadRootNode:(DFIHierarchyNode *)root;`
 
-函数说明：使用root根节点，来填充该Pack层级图，等待绘制
+Function Instruction:use root node to fill this Pach hierarchy graph, waiting for drawning.
 
 [#]() `- (DFIHierarchyPack *)size:(CGSize)size;`
 
-函数说明：设置Pack的大小，返回该Pack为了链式调用
+Function Instruction: determine the size of Pack, returning this Pack for chained-calling.
 
 [#]() `@property (nonatomic, assign) float padding;`
 
-*padding* : 表示pack之间的间距
+*padding* : represents the distance between pach.
 
 ### HierarchyNode
 
-具体见`DFIHierarchyNode.h`头文件，**DFIHierarchyNode**类表示层级数据中的一个节点的信息
+More detail in `DFIHierarchyNode.h` header file，**DFIHierarchyNode** class represents the information of a node in this hierarchy data.
 
 #### API
 
 [#]() `@property(nonatomic, assign) int depth;`
 
-*depth*: 表示该node在整个层级图中的深度
+*depth*: represents the depth of a node in the hierarchy graph.
 
 [#]() `@property(nonatomic, assign) int height;`
 
-*height*: 表示该node在整个层级图中的高度
+*height*: represents the height of this node in the hierarchy graph.
 
 [#]() `@property (nonatomic, strong) DFIHierarchyNode *parent;`
 
-*parent*: 表示该节点的父节点
+*parent*: represents the parent node of this node.
 
 [#]() `@property (nonatomic, strong) NSMutableArray *children;`
 
-*children*: 表示给节点的子节点们
+*children*: represents children nodes of the root node.
 
 [#]() `@property (nonatomic, strong) NSString *id;`
 
-*id*: 节点的id
+*id*: the id of specific node.
 
 [#]() `@property (nonatomic, assign) float x;`
 
-*x*: 节点的x坐标
+*x*: x-axis coordination of specific node.
 
 [#]() `@property (nonatomic, assign) float y;`
 
-*y*: 节点的y坐标
+*y*: y-axis coordination of specific node.
 
 [#]() `@property (nonatomic, assign) float value;`
 
-*value*: 节点的value
+*value*: value of specific node.
